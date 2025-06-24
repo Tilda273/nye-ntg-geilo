@@ -58,13 +58,13 @@
 }
 
 .navbar__home-link {
-    text-decoration: none; /* Fjerner understrek */
-    color: inherit; /* Arver fargen fra omgivelsene */
+    text-decoration: none; 
+    color: inherit; 
     cursor: pointer;
 }
 
 .navbar__home-link:hover {
-    opacity: 0.8; /* Litt visuell tilbakemelding ved hover */
+    opacity: 0.8; 
 }
 
 .navbar__links {
@@ -76,6 +76,28 @@
     padding: 0 1rem;
     height: 100%;
 }
+
+.navbar__links.active {
+    position: relative;
+    color: #fff;
+
+}
+
+.navbar__links.active::after {
+    content: '';
+    position: absolute;
+    bottom: 20px; 
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+
+.navbar__links {
+    transition: border-bottom 0.3s ease;
+}
+
 .navbar__btn {
     display: flex;
     justify-content: center;
@@ -105,7 +127,7 @@
 }
 
 .navbar__links:hover {
-    color: #e63838ce;
+    color: #e4e4fdce;
     transition: all 0.3s ease;
 }
 
@@ -346,7 +368,7 @@
 
 .button-container {
     display: flex;
-    gap: 10px; /* Avstand mellom knappene */
+    gap: 10px;
     color: #5259a9;
     height: 50px;
 }
@@ -359,7 +381,7 @@
 
 
 .hero-ntg {
-    background-image: url('images/ntg.jpg'); /* Bytt til riktig filnavn og plassering */
+    background-image: url('images/ntg.jpg');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -453,10 +475,10 @@
 
 
 .hero-para {
-    background-image: url('images/elisabeth.jpeg');
+    background-image: url('images/elisabeth3.jpeg');
     background-size: cover;
-    background-position: center 15% 80%;
-    height: 70vh;
+    background-position: center 15%;
+    height: 65vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -481,7 +503,7 @@
 }
 
 .hero-para h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -524,6 +546,12 @@
 }
 
 /* STORY */
+
+.para__story-wrapper {
+    background-color: #b7cbd93e;
+    width: 100%;
+}
+
 .para__story {
     max-width: 700px;
     margin: 0 auto;
@@ -567,14 +595,14 @@
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto 50px auto;
-    align-items: stretch; /* Dette er viktig */
+    align-items: stretch; 
 }
 
 
 .card {
     flex: 1 1 300px;
     max-width: 300px;
-    min-height: 130px; /* Tvinger alle kort til å være minst like høye */
+    min-height: 130px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -708,7 +736,7 @@
 
 
 .hero-vision {
-    background-image: url('images/stadio.avif'); /* Bytt til riktig filnavn og plassering */
+    background-image: url('images/stadion.jpg');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -972,7 +1000,7 @@ p {
 
 .sponsor-grid img {
     width: 100%;
-    max-width: 150px; /* Juster dette etter behov */
+    max-width: 150px;
     height: auto;
     object-fit: contain;
     transition: filter 0.3s ease;
