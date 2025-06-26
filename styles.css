@@ -155,7 +155,7 @@
 
 
     .navbar__menu.active {
-        background: #32387c;
+        background: #105c93;
         top: 100%;
         opacity: 1;
         z-index: 99;
@@ -469,6 +469,93 @@
 }
 
 
+@media (max-width: 600px) {
+    .hero-ntg {
+        height: 40vh;
+        background-position: center 30%;
+        padding: 1rem;
+    }
+
+    .hero-ntg h1 {
+        font-size: 1.8rem;
+        padding: 0 1rem;
+    }
+
+    .ntg-cards-section {
+        padding: 2rem 1rem;
+    }
+
+    .ntg-cards-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .ntg-cards-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .ntg-card {
+        padding: 1.5rem;
+    }
+
+    .ntg-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .ntg-card p,
+    .ntg-card ul {
+        font-size: 1rem;
+    }
+
+    .vision-cards-section {
+    padding: 2rem 1rem;
+    }
+
+    .vision-cards-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .vision-cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .vision-card {
+        padding: 1.5rem;
+    }
+
+    .about-section-wrapper {
+        padding: 3rem 0;
+    }
+
+    .about-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+
+    .ntg-button-wrapper {
+        margin-top: 2rem;
+    }
+
+    .ntg-button {
+        font-size: 0.95rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+}
+
+
 /* PARA SIDE*/
 
 /* HERO SECTION */
@@ -688,6 +775,57 @@
 .stat-box p {
     font-size: 1em;
     color: #555;
+}
+
+@media (max-width: 600px) {
+    
+    .hero-para {
+        aspect-ratio: 16 / 9; /* eller 3 / 2, 4 / 3 – prøv deg frem */
+        width: 100%;
+        background-image: url('images/elisabeth3.jpeg');
+        background-size: cover;
+        background-position: center 15%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 5rem;
+    }
+
+
+    .hero-para h2 {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+
+    .hero-para p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .photo-credit {
+        font-size: 0.7rem;
+        bottom: 6px;
+        right: 10px;
+        background-color: rgba(0, 0, 0, 0.5); /* gjør teksten mer lesbar */
+        padding: 2px 4px;
+    }
+
+    .para__container {
+        padding: 1.5rem 1rem;
+    }
+
+    .para__container h2 {
+        font-size: 1.3rem;
+    }
+
+    .para__container h3 {
+        font-size: 1.8rem;
+    }
+
+    .para__container p {
+        font-size: 1rem;
+    }
 }
 
 /* STØTTESPILLERE */
