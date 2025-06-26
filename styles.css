@@ -491,6 +491,17 @@
     z-index: 1;
 }
 
+.photo-credit {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 0.8rem;
+    color: #b9b9b9;
+    z-index: 2;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
 .hero-para h2,
 .hero-para p {
     position: relative;
