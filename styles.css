@@ -33,18 +33,7 @@
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 0 50px;
 }
-
-
-.navbar__title {
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 10px 10px 10px 10px;
-    color: #fff;
-    font-weight: bold;
-}
-
 
 .navbar__menu {
     display: flex;
@@ -296,38 +285,6 @@
     color: #aaa;
 }
 
-
-    /* EGNE SIDER
-
-/* FORSIDE - Geilo Arena */
-    /* HERO SECTION */
-
-.hero-geiloarena {
-    background-image: url('images/geiloarenaHero.jpg'); 
-    background-size: cover;
-    background-position: center;
-    height: 75vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.hero-overlay {
-    padding: 2rem;
-    border-radius: 10px;
-}
-
-.hero h1 {
-    color: white;
-    font-size: 3rem;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-}
-
-
 @media (max-width: 768px) {
     .hero {
         height: 40vh;
@@ -338,47 +295,10 @@
     }
 }
 
-    /* About Section */
+    /* EGNE SIDER */
 
-.about-section-wrapper {
-    background-color: #ceddfc;
-    padding: 4rem 0;
-}
-
-.about-section {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-    text-align: center;
-}
-
-.about-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #1a1a1a;
-}
-
-.about-section p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #333;
-    margin-bottom: 1.5rem;
-}
-
-
-.button-container {
-    display: flex;
-    gap: 10px;
-    color: #5259a9;
-    height: 50px;
-}
-
-.button {
-    background-color: #5259a9;
-    color: #fff;
-}   
-/* NTG */
-
+/* FORSIDE - NYE NTG */
+/* HERO SECTION */
 
 .hero-ntg {
     background-image: url('images/ntg.jpg');
@@ -397,7 +317,6 @@
     text-align: center;
     font-weight: bold;
 }
-
 
 .ntg-cards-section {
     background-color: #e8effc;
@@ -446,6 +365,85 @@
     margin-top: 0.5rem;
 }
 
+/* VISJON OG PLANER */
+
+.vision-cards-section {
+    background-color: #f0f4f8;
+    padding: 2rem 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.vision-cards-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #003366;;
+}
+
+.vision-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.vision-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vision-card i {
+    font-size: 2.5rem;
+    color: #105c93;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+}
+
+.vision-card h3 {
+    margin-bottom: 1rem;
+    color: #003366;
+}
+
+/* About Section */
+
+.about-section-wrapper {
+    background-color: #ceddfc;
+    padding: 4rem 0;
+}
+
+.about-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    color: #5259a9;
+    height: 50px;
+}
+
+.button {
+    background-color: #5259a9;
+    color: #fff;
+}   
 
 .ntg-button-wrapper {
     text-align: center;
@@ -471,26 +469,25 @@
 }
 
 
-/* PARA */
+/* PARA SIDE*/
 
-
+/* HERO SECTION */
 .hero-para {
     background-image: url('images/elisabeth3.jpeg');
     background-size: cover;
     background-position: center 15%;
-    height: 65vh;
+    height: 80vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 5rem;
 }
-
 .hero-para::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(101, 95, 95, 0.4);
+    background: rgba(168, 186, 193, 0.34);
     z-index: 1;
 }
 
@@ -513,17 +510,20 @@
     margin-top: 1rem;
 }
 
-.para-section-wrapper {
-    background-color: #ceddfc;
-    padding: 4rem 0;
+.full-width-wrapper {
+    background-color: #e8effc;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .para__container {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 2rem 1.5rem;
+    padding: 2rem;
     text-align: center;
 }
+
 
 .para__container h2 {
     font-size: 1.6rem;
@@ -548,7 +548,7 @@
 /* STORY */
 
 .para__story-wrapper {
-    background-color: #b7cbd93e;
+    background-color: #fefefe;
     width: 100%;
 }
 
@@ -576,7 +576,7 @@
 
 .cards-section {
     padding: 40px 20px;
-    background-color: #fff;
+    background-color: #e8effc;
     text-align: center;
     padding-top: 40px;
     margin-bottom: 20px;
@@ -677,148 +677,6 @@
 .stat-box p {
     font-size: 1em;
     color: #555;
-}
-
-/* Call to action */
-
-
-.call-to-action {
-    padding: 3rem 1.5rem;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: 'Arial', sans-serif;
-    color: #1a1a1a;
-}
-
-.call-to-action h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.call-to-action h3 {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.call-to-action p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
-
-.cta-button {
-    background-color: #005fa3;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-}
-
-.cta-button a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.cta-button:hover {
-    background-color: #054471;
-}
-
-
-
-
-/* VISJON */
-
-
-.hero-vision {
-    background-image: url('images/stadion.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-vision h1 {
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-    font-weight: bold;
-}
-
-
-.vision-intro-section {
-    background-color: #ffffff;
-    padding-top: 60px;
-    padding-bottom: 30x;
-    display: flex;
-    justify-content: center;
-}
-
-.vision-intro {
-    max-width: 800px;
-    text-align: center;
-}
-
-.vision-intro h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #003366;
-}
-
-.vision-intro p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
-    color: #444;
-}
-
-.vision-cards-section {
-    background-color: #f0f4f8;
-    padding: 2rem 2rem;
-    text-align: center;
-    margin-top: 2rem;
-}
-.vision-cards-section h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #003366;;
-}
-
-.vision-cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.vision-card {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-.vision-card i {
-    font-size: 2.5rem;
-    color: #105c93;
-    margin-bottom: 1rem;
-    display: block;
-    text-align: center;
-}
-
-
-.vision-card h3 {
-    margin-bottom: 1rem;
-    color: #003366;
 }
 
 /* STØTTESPILLERE */
@@ -1020,6 +878,29 @@ p {
 
 /* kontakt oss */
 
+.hero-kontakt {
+    background-image: url('images/kontaktoss.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
 
 .hero-contact {
     text-align: center;
@@ -1040,66 +921,32 @@ p {
 }
 
 
-.supporter-form {
-    background-color: #cde9f7;
-    padding: 4rem 2rem;
-    max-width: 600px;
+
+/* Call to action */
+
+.call-to-action {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    max-width: 800px;
     margin: 0 auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    font-family: 'Arial', sans-serif;
+    color: #1a1a1a;
 }
 
-.supporter-form h2 {
-    text-align: center;
+.call-to-action h2 {
+    font-size: 2rem;
     margin-bottom: 1rem;
-    color: #222;
 }
 
-.supporter-form p {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #555;
+.call-to-action h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
-.supporter-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.call-to-action p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
 }
 
-.supporter-form label {
-    font-weight: 500;
-    color: #333;
-}
-
-.supporter-form input,
-.supporter-form select,
-.supporter-form textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-    width: 100%;
-}
-
-.supporter-form .checkbox {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.9rem;
-}
-
-.supporter-form button {
-    background-color: #0077cc;
-    color: white;
-    padding: 0.75rem;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-.supporter-form button:hover {
-    background-color: #005fa3;
-}
