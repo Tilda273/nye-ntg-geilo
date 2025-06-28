@@ -780,16 +780,18 @@
 @media (max-width: 600px) {
     
     .hero-para {
-        aspect-ratio: 16 / 9; /* eller 3 / 2, 4 / 3 – prøv deg frem */
+        aspect-ratio: 16 / 9; 
         width: 100%;
+        height: 300px;
         background-image: url('images/elisabeth3.jpeg');
         background-size: cover;
         background-position: center 15%;
         position: relative;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
-        padding-bottom: 5rem;
+        padding-bottom: 1rem;
+        padding-top: 5rem;
     }
 
 
@@ -1099,3 +1101,43 @@ p {
     margin-bottom: 1.5rem;
 }
 
+@media (max-width: 600px) {
+    .hero-kontakt {
+        height: 40vh; /* Mindre høyde på mobil */
+        background-position: center 30%; /* Juster fokuspunktet */
+        padding: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Mindre overskrift */
+        padding: 0 1rem;
+    }
+
+    .hero-contact {
+        padding: 20px 15px;
+    }
+
+    .hero-contact h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-contact p {
+        font-size: 1rem;
+    }
+
+    .call-to-action {
+        padding: 2rem 1rem;
+    }
+
+    .call-to-action h2 {
+        font-size: 1.5rem;
+    }
+
+    .call-to-action h3 {
+        font-size: 1.2rem;
+    }
+
+    .call-to-action p {
+        font-size: 1rem;
+    }
+}
